@@ -26,6 +26,10 @@ try {
     $app->process();
     echo '<hr>setCaseSensitive = false' . PHP_EOL;
     print_r($app->result);
+
+
+    $chess = new \classes\ChessCheck('a1', 'b2');
+    $chess->process();
 } catch (Throwable $e) {
     throw $e;
 }
